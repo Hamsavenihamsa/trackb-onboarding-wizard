@@ -36,9 +36,29 @@ frontend/ --> React frontend
 ---
 
 ## Setup Instructions
+backend/
+├ main.py # API routes
+├ models.py # Pydantic models
+├ formula_validator.py # Formula validation
+└ parameters.json # Parameter registry
+
+
+**Frontend** → React frontend  
+
+frontend/
+├ src/
+│ ├ App.js
+│ ├ api.js
+│ └ steps/ # Step1Plant.js, Step2Assets.js, Step3Parameters.js, Step4Formulas.js, Step5Review.js
+└ styles.css
+
+
+---
+
+## Setup Instructions
 
 ### Backend
-
+```bash
 cd backend
 python -m venv venv
 venv\Scripts\activate   # Windows
@@ -47,7 +67,7 @@ uvicorn main:app --reload
 
 Backend runs at http://localhost:8000
 
-###  Frontend
+Frontend
 cd frontend
 npm install
 npm start
