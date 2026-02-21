@@ -1,0 +1,171 @@
+/* src/styles.css */
+
+/* Page background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  min-height: 100vh;
+}
+
+/* Main container (step card) */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+/* Heading style */
+.container h1 {
+  text-align: center;
+  color: #00796b;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.container h3 {
+  color: #004d40;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.container h4 {
+  color: #00695c;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background-color: #00796b;
+  transition: width 0.3s ease;
+  border-radius: 6px;
+}
+
+/* Step content area */
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+/* Inputs and selects */
+input, select, textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 5px rgba(0,121,107,0.3);
+  outline: none;
+}
+
+/* Error / Success messages */
+p {
+  margin: 0;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: 500;
+}
+
+.success {
+  color: #388e3c;
+  font-weight: 500;
+}
+
+/* Buttons */
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+button.back {
+  background-color: #bdbdbd;
+  color: #333;
+}
+
+button.back:hover {
+  background-color: #9e9e9e;
+}
+
+button.next {
+  background-color: #00796b;
+  color: white;
+}
+
+button.next:hover {
+  background-color: #004d40;
+}
+
+/* Navigation button container */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Table styling for Step 2 & 3 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table th {
+  background-color: #e0f2f1;
+  font-weight: 600;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navigation-buttons {
+    flex-direction: column;
+  }
+}
