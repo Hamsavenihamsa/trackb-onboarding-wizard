@@ -1,0 +1,5 @@
+[
+  { "name": "steam_generation", "unit": "t/h" },
+  { "name": "coal_consumption", "unit": "kg/h" },
+  { "name": "efficiency", "unit": "%" }
+]
