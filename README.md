@@ -19,6 +19,7 @@ This replaces the old brittle Excel-based workflow with an intuitive UI.
 ---
 
 ## Architecture
+```bash
 backend/ --> FastAPI backend
 ├ main.py --> API routes
 ├ models.py --> Pydantic models
