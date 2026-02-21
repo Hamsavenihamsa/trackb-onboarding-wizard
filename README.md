@@ -36,6 +36,7 @@ frontend/ --> React frontend
 ---
 
 ## Setup Instructions
+```bash
 backend/
 ├ main.py # API routes
 ├ models.py # Pydantic models
